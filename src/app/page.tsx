@@ -9,6 +9,7 @@ import {
   GlobeAltIcon,
   UserIcon
 } from '@heroicons/react/20/solid'
+import Image from 'next/image'
 
 const services = [
   {
@@ -59,7 +60,8 @@ const cards = [
   {
     name: 'Pourquoi nous ?',
     description:
-      "Pas de blabla, que du boulot : On va droit au but. Pas de promesses vides, juste des résultats concrets.</br> On est jeunes et on sait ce qu'on fait. Une bonne énergie et un bon mindset. </br> Des prix raisonnables : On est basés en Tunisie, alors nos tarifs sont cool. Qualité pro, sans se ruiner. ",
+  'Pas de blabla, que du boulot : On va droit au but. Pas de promesses vides, juste des résultats concrets.<br/> On est jeunes et on sait ce qu\'on fait. Une bonne énergie et un bon mindset. <br/> Des prix raisonnables : On est basés en Tunisie, alors nos tarifs sont cool. Qualité pro, sans se ruiner. ',
+
     icon: QuestionMarkCircleIcon
   },
   {
@@ -76,21 +78,21 @@ const experiences = [
     description:
       "Formiz, notre fierté open source, est bien plus qu'un simple formulaire. C'est une expérience de développement fluide, conçue pour simplifier la gestion des données et rendre la création de formulaires aussi agréable que possible. Avec Formiz, la puissance du développement est entre vos mains.",
     href: 'https://github.com/BearStudio/formiz',
-    imageUrl: 'Formiz.png'
+    imageUrl: '/Formiz.png'
   },
   {
     name: 'Jhipster',
     description:
       "Jhipster, un autre de nos engagements open source, est une boîte à outils complète pour développer des applications web modernes. Avec une architecture solide, des fonctionnalités étendues et une intégration transparente, Jhipster accélère le processus de développement, vous permettant de vous concentrer sur l'essentiel : la création d'une expérience utilisateur exceptionnelle.",
     href: 'https://github.com/jhipster',
-    imageUrl: 'jhipster.png'
+    imageUrl: '/jhipster.png'
   },
   {
     name: 'Start UI',
     description:
       "StartUI, notre projet basé sur NextJS, TypeScript, ChakraUI et React-Query, est bien plus qu'un simple starter. C'est une invitation à explorer le monde du développement web moderne avec un ensemble de technologies soigneusement sélectionnées. Lancez votre projet avec StartUI et donnez-lui une longueur d'avance dans le monde numérique.",
     href: 'https://github.com/BearStudio/start-ui-web',
-    imageUrl: 'startui.png'
+    imageUrl: '/startui.png'
   }
 ]
 const options = [
@@ -113,7 +115,7 @@ export default function Hero () {
     <div className='bg-white'>
       <header className='absolute inset-x-0 top-0 z-50'>
         <div className='px-6 pt-6 lg:max-w-2xl lg:pl-8 lg:pr-0'>
-          <img alt='Camel Studio' width='58' src='logo.svg' />
+          <Image alt='/Camel Studio' width='58' height='58' src='logo.svg' />
         </div>
       </header>
 
@@ -131,10 +133,12 @@ export default function Hero () {
 
             <div className='relative px-6 py-32 sm:py-40 lg:px-8 lg:py-56 lg:pr-0'>
               <div className='mx-auto max-w-2xl lg:mx-0 lg:max-w-xl'>
-                <img
+                <Image
+                 height='580'
                   alt='Camel Studio'
+                  width='580'
                   className='h-10 w-auto mb-4 '
-                  src='logocamel.png'
+                  src='/logocamel.png'
                 />
 
                 <h1 className='text-4xl font-bold tracking-tight text-blue-700 sm:text-6xl margin-2'>
@@ -158,7 +162,9 @@ export default function Hero () {
           </div>
         </div>
         <div className='bg-gray-50 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2'>
-          <img
+          <Image
+           height='900'
+           width='900'
             className='aspect-[3/2] object-cover lg:aspect-auto lg:h-full lg:w-full'
             src='https://images.unsplash.com/photo-1521737711867-e3b97375f902?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1587&q=80'
             alt=''
@@ -191,7 +197,9 @@ export default function Hero () {
       </div>
 
       <div className='relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32'>
-        <img
+        <Image
+         height='2000'
+         width='2000'
           src='https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&crop=focalpoint&fp-y=.8&w=2830&h=1500&q=80&blend=111827&sat=-100&exp=15&blend-mode=multiply'
           alt=''
           className='absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center'
@@ -248,7 +256,9 @@ export default function Hero () {
               {experiences.map(experience => (
                 <div key={experience.name} className='flex flex-col mx-4'>
                   <dt className='text-base font-semibold leading-7 text-black flex items-center mb-6'>
-                    <img
+                    <Image
+                     height='2000'
+                     width='2000'
                       src={experience.imageUrl}
                       alt={experience.name}
                       className='h-12 w-12 mr-8'
@@ -274,7 +284,9 @@ export default function Hero () {
       </div>
 
       <div className='relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32'>
-        <img
+        <Image
+         height='2000'
+         width='2000'
           src='https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&crop=focalpoint&fp-y=.8&w=2830&h=1500&q=80&blend=111827&sat=-100&exp=15&blend-mode=multiply'
           alt=''
           className='absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center'
@@ -368,30 +380,38 @@ export default function Hero () {
 
           <div className='flex flex-wrap items-start justify-end gap-6 sm:gap-6 lg:contents'>
             <div className='w-full lg:w-auto lg:flex-none lg:self-end lg:ml-44'>
-              <img
-                src='equipe.png'
+              <Image
+               height='2000'
+               width='2000'
+                src='/equipe.png'
                 alt=''
                 className='w-full h-auto max-w-none rounded-2xl lg:w-[42rem] lg:h-[27rem] bg-gray-50 object-cover'
               />
             </div>
             <div className='contents lg:col-span-2 lg:col-end-2 lg:ml-auto lg:flex lg:w-full lg:items-start lg:justify-end lg:gap-x-8'>
               <div className='order-first flex w-full justify-end self-end lg:w-auto'>
-                <img
-                  src='equipe eljam.jpg'
+                <Image
+                 height='2000'
+                 width='2000'
+                  src='/equipe eljam.jpg'
                   alt=''
                   className='w-full h-auto max-w-none flex-none rounded-2xl lg:w-[32rem] lg:h-[24rem] bg-gray-50 object-cover'
                 />
               </div>
               <div className='flex w-full flex-auto justify-end lg:w-auto lg:flex-none'>
-                <img
-                  src='equipe desert.jpg'
+                <Image
+                 height='2000'
+                 width='2000'
+                  src='/equipe desert.jpg'
                   alt=''
                   className='w-full h-auto max-w-none max-h-full flex-none rounded-2xl lg:w-[38rem] lg:h-[28rem] bg-gray-50 object-cover'
                 />
               </div>
               <div className='sm:block sm:w-full sm:flex-auto lg:w-auto lg:flex-none'>
-                <img
-                  src='desert.png'
+                <Image
+                 height='2000'
+                 width='2000'
+                  src='/desert.png'
                   alt=''
                   className='w-full h-auto max-w-none flex-none rounded-xl lg:w-[28rem] lg:h-[21rem] bg-gray-50 object-cover'
                 />
