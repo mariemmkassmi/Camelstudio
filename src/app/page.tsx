@@ -298,13 +298,13 @@ export default function Hero () {
               Développer votre projet avec le Camel Studio 🐪
             </h2>
             <p className='mt-6 text-lg leading-8 text-gray-300'>
-              Chez Camel Studio, on croit fermement que la force d'une équipe
-              réside dans sa cohésion. Notre équipe ne se contente pas d'être
+              Chez Camel Studio, on croit fermement que la force d&rsquo;une équipe
+              réside dans sa cohésion. Notre équipe ne se contente pas d&rsquo;être
               une bande de collègues, mais une véritable famille de devs. Avec
               nous, vous faites le choix d’avoir toute une équipe soudée prête à
               faire briller votre vision. Même si chaque membre de notre équipe
-              bosse sur des projets différents, l'esprit d'équipe reste intact.
-              On comprend que chaque projet ait des besoins spécifiques, c'est
+              bosse sur des projets différents, l&rsquo;esprit d&rsquo;équipe reste intact.
+              On comprend que chaque projet ait des besoins spécifiques, c&rsquo;est
               pourquoi on offre deux options flexibles pour répondre à vos
               attentes.
             </p>
@@ -345,8 +345,8 @@ export default function Hero () {
           <div className='lg:col-end-1 lg:w-full lg:max-w-lg lg:pb-8'>
             <p className='mt-6 text-lg leading-8 text-Black lg:ml-12'>
               Chez <strong className='font-blod'>Camel Studio</strong> , on est
-              fiers de notre esprit d'équipe et on est prêts à vous accompagner,
-              que vous ayez besoin d'un renfort ponctuel ou d’une conception
+              fiers de notre esprit d&rsquo;équipe et on est prêts à vous accompagner,
+              que vous ayez besoin d&rsquo;un renfort ponctuel ou d’une conception
               complète. Faites équipe avec nous, et ensemble, on fera de votre
               vision une réalité. 🚀🐪
             </p>
