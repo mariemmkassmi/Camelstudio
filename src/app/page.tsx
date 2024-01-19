@@ -1,3 +1,5 @@
+import {LifebuoyIcon, NewspaperIcon, QuestionMarkCircleIcon , UserGroupIcon, LightBulbIcon, RocketLaunchIcon } from '@heroicons/react/20/solid'
+
 const services = [
   {
     name: "# Création d'application web sur mesure",
@@ -31,22 +33,45 @@ const services = [
   }
 ]
 
+
+const cards = [
+  {
+    name: 'Qui sommes-nous ?',
+    description: 'Une équipe jeune, mais pas novice, soudée et qui connaît le marché européen.  Pas de blabla ici. On code, on design, on résout des problèmes. Notre équipe ?  Des gens sympas qui aiment ce qu\'ils font et qui le font bien. On sait ce qui se passe sur le marché européen, et on sait comment s\'y prendre pour des projets qui dépotent.',
+    icon: UserGroupIcon,
+  },
+  {
+    name: 'Ce qu\'on sait faire ?',
+    description: 'On fait du développement sur mesure, des applications web fluides et des solutions digitales qui marchent. On n\'a pas de formulesmagiques, juste du bon boulot. On est sympa, mais surtout on estpros.',
+    icon: LightBulbIcon,
+  },
+  {
+    name: 'Pourquoi nous ?',
+    description: ' Pas de blabla, que du boulot : On va droit au but. Pas depromesses vides, juste des résultats concrets.<br/>Jeunes, mais pas novices :On est jeunes, mais on sait ce qu\'on fait.Une bonne énergie et un bon mindset.<br/>Des prix raisonnables : On est basés en Tunisie, alors nos tarifs sont cool. Qualité pro, sans se ruiner.',
+    icon: QuestionMarkCircleIcon ,
+  }, {
+    name: 'On bosse comment ?',
+    description: ' Si vous en avez marre des discours pompeux et que vous voulez des résultats tangibles, parlons de votre projet. Contactez-nous et discutons sérieusement de ce que l\'on peut faire ensemble.',
+    icon: RocketLaunchIcon  ,
+  }
+]
+
 const experiences = [
   {
     name: 'Formiz',
-
+    description:'Formiz, notre fierté open source, est bien plus qu\'un simple formulaire. C\'est une expérience de développement fluide, conçue pour simplifier la gestion des données et rendre la création de formulaires aussi agréable que possible. Avec Formiz, la puissance du développement est entre vos mains.',
     href: 'https://github.com/BearStudio/formiz',
-    imageUrl: 'formiz.svg'
+    imageUrl: 'Formiz.png'
   },
   {
     name: 'Jhipster',
-
+   description:'Jhipster, un autre de nos engagements open source, est une boîte à outils complète pour développer des applications web modernes. Avec une architecture solide, des fonctionnalités étendues et une intégration transparente, Jhipster accélère le processus de développement, vous permettant de vous concentrer sur l\'essentiel : la création d\'une expérience utilisateur exceptionnelle.',
     href: 'https://github.com/jhipster',
     imageUrl: 'jhipster.png'
   },
   {
     name: 'Start UI',
-
+    description:'StartUI, notre projet basé sur NextJS, TypeScript, ChakraUI et React-Query, est bien plus qu\'un simple starter. C\'est une invitation à explorer le monde du développement web moderne avec un ensemble de technologies soigneusement sélectionnées. Lancez votre projet avec StartUI et donnez-lui une longueur d\'avance dans le monde numérique.',
     href: 'https://github.com/BearStudio/start-ui-web',
     imageUrl: 'startui.png'
   }
@@ -72,7 +97,7 @@ export default function Hero () {
       <header className='absolute inset-x-0 top-0 z-50'>
         <div className='mx-auto max-w-7xl'>
           <div className='px-6 pt-6 lg:max-w-2xl lg:pl-8 lg:pr-0'>
-            <img alt='Camel Studio' width='58' src='logo.png' />
+            <img alt='Camel Studio' width='58' src='logo.svg' />
           </div>
         </div>
       </header>
@@ -127,78 +152,68 @@ export default function Hero () {
         </div>
       </div>
 
-      <div className='mx-auto max-w-7xl px-6 lg:px-8 mt-20 '>
+    <div className='mx-auto max-w-7xl px-6 lg:px-8 mt-10'>
         <div className='mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:gap-x-10 lg:grid-cols-3'>
-          <dl className='col-span-2 grid grid-cols-1 gap-x-8 gap-y-10 text-base leading-7 text-gray-600 sm:grid-cols-2 lg:gap-y-16 '>
-            {services.map(service => (
+          <dl className='col-span-2 grid grid-cols-1 gap-x-8 gap-y-10 text-base leading-7 text-gray-600 sm:grid-cols-2 lg:gap-y-16'>
+            {services.map((service) => (
               <div key={service.name} className='relative pl-9'>
-                <dt className='font-semibold text-black '>{service.name}</dt>
-                <dd className='mt-2'>{service.description}</dd>
+                <dt className='font-semibold text-2xl text-blue-700'>{service.name}</dt>
+                <dd className='mt-2 text-lg text-gray-800'>{service.description}</dd>
               </div>
             ))}
           </dl>
         </div>
       </div>
-      <div className='mx-auto max-w-7xl px-6 py-20 sm:pt-32 lg:px-8 lg:py-26 '>
-        <div className=' lg:gap-8'>
-          <div className='lg:col-span-5'>
-            <h3 className='font-bold'> Qui sommes-nous ?</h3>
-            <p className='mt-4 text-base leading-7 text-black'>
-              Une équipe jeune mais pas novice, soudée et qui connaît le marché
-              européen. Pas de blabla ici. On code, on design, on résout des
-              problèmes. Notre équipe ? Des gens sympas qui aiment ce qu'ils
-              font et qui le font bien. On sait ce qui se passe sur le marché
-              européen, et on sait comment s'y prendre pour des projets qui
-              dépotent.
-            </p>
-            <h3 className='mt-4 font-bold'>Ce qu'on sait faire ?</h3>
-            <p className='mt-4 text-base leading-7 text-black'>
-              On fait du développement sur mesure, des applications web fluides
-              et des solutions digitales qui marchent. On n'a pas de formules
-              magiques, juste du bon boulot. On est sympa, mais surtout on est
-              pros.
-            </p>
-            <h3 className='mt-4 font-bold'>Pourquoi nous ?</h3>
-            <div className='mt-4 text-base leading-7 text-black'>
-              <div className='flex items-center'>
-                <img width='20' src='Bla-Bla-Bla .png' alt='Bla Bla Bla' />
-                <span className='ml-2'>
-                  Pas de blabla, que du boulot : On va droit au but. Pas de
-                  promesses vides, juste des résultats concrets.
-                </span>
-              </div>
-              <div className='flex items-center mt-4'>
-                <img
-                  width='20'
-                  src='téléchargement .png'
-                  alt='Téléchargement'
-                />
-                <span className='ml-2'>
-                  Jeunes, mais pas novices :On est jeunes, mais on sait ce qu'on
-                  fait. Une bonne énergie et un bon mindset.
-                </span>
-              </div>
-              <div className='flex items-center mt-4'>
-                <img
-                  width='20'
-                  src='4909976-200 .png'
-                  alt='Prix raisonnables'
-                />
-                <span className='ml-2'>
-                  Des prix raisonnables : On est basés en Tunisie, alors nos
-                  tarifs sont cool. Qualité pro, sans se ruiner.
-                </span>
+
+
+    <div className="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32">
+      <img
+        src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&crop=focalpoint&fp-y=.8&w=2830&h=1500&q=80&blend=111827&sat=-100&exp=15&blend-mode=multiply"
+        alt=""
+        className="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center"
+      />
+      <div className="hidden sm:absolute sm:-top-10 sm:right-1/2 sm:-z-10 sm:mr-10 sm:block sm:transform-gpu sm:blur-3xl">
+        <div
+          className="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-[#ff4694] to-[#776fff] opacity-20"
+          style={{
+            clipPath:
+              'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
+          }}
+        />
+      </div>
+      <div className="absolute -top-52 left-1/2 -z-10 -translate-x-1/2 transform-gpu blur-3xl sm:top-[-28rem] sm:ml-16 sm:translate-x-0 sm:transform-gpu">
+        <div
+          className="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-[#ff4694] to-[#776fff] opacity-20"
+          style={{
+            clipPath:
+              'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
+          }}
+        />
+      </div>
+      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+        <div className="mx-auto max-w-2xl lg:mx-0">
+          <h2 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">Camel Studio</h2>
+          <p className="mt-6 text-lg leading-8 text-gray-300">
+          Nous transformons les idées en réalité car chaque projet mérite une touche de magie! 🚀🐪
+          </p>
+        </div>
+        <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-6 sm:mt-20 lg:mx-0 lg:max-w-none lg:grid-cols-4 lg:gap-8">
+          {cards.map((card) => (
+            <div key={card.name} className="flex gap-x-4 rounded-xl bg-white/5 p-6 ring-1 ring-inset ring-white/10">
+              <card.icon className="h-7 w-5 flex-none text-indigo-400" aria-hidden="true" />
+              <div className="text-base leading-7">
+                <h3 className="font-semibold text-white">{card.name}</h3>
+                <p className="mt-2 text-gray-300 "dangerouslySetInnerHTML={{ __html: card.description }}></p>
               </div>
             </div>
-            <h3 className='mt-4 font-bold'>On bosse comment ?</h3>
-            <p className='mt-4 text-base leading-7 text-black'>
-              Si vous en avez marre des discours pompeux et que vous voulez des
-              résultats tangibles, parlons de votre projet. Contactez-nous et
-              discutons sérieusement de ce que l'on peut faire ensemble.
-            </p>
-          </div>
+          ))}
         </div>
       </div>
+    </div>
+ 
+
+
+     
 
       <div className='mx-auto max-w-7xl px-6 lg:px-8 '>
         <div className='mx-auto max-w-2xl lg:mx-0'>
@@ -229,6 +244,8 @@ export default function Hero () {
                   {experiences.name}
                 </dt>
                 <dd className='mt-1 flex flex-auto flex-col text-base leading-7 text-gray-600'>
+                <p className='mt-2'>{experiences.description}</p>
+                
                   <p className='mt-6'>
                     <a
                       href={experiences.href}
