@@ -60,7 +60,7 @@ const cards = [
   {
     name: 'Pourquoi nous ?',
     description:
-  'Pas de blabla, que du boulot : On va droit au but. Pas de promesses vides, juste des résultats concrets.<br/> On est jeunes et on sait ce qu\'on fait. Une bonne énergie et un bon mindset. <br/> Des prix raisonnables : On est basés en Tunisie, alors nos tarifs sont cool. Qualité pro, sans se ruiner. ',
+      "Pas de blabla, que du boulot : On va droit au but. Pas de promesses vides, juste des résultats concrets.<br/> On est jeunes et on sait ce qu'on fait. Une bonne énergie et un bon mindset. <br/> Des prix raisonnables : On est basés en Tunisie, alors nos tarifs sont cool. Qualité pro, sans se ruiner. ",
 
     icon: QuestionMarkCircleIcon
   },
@@ -134,7 +134,7 @@ export default function Hero () {
             <div className='relative px-6 py-32 sm:py-40 lg:px-8 lg:py-56 lg:pr-0'>
               <div className='mx-auto max-w-2xl lg:mx-0 lg:max-w-xl'>
                 <Image
-                 height='580'
+                  height='580'
                   alt='Camel Studio'
                   width='580'
                   className='h-10 w-auto mb-4 '
@@ -163,8 +163,8 @@ export default function Hero () {
         </div>
         <div className='bg-gray-50 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2'>
           <Image
-           height='900'
-           width='900'
+            height='900'
+            width='900'
             className='aspect-[3/2] object-cover lg:aspect-auto lg:h-full lg:w-full'
             src='https://images.unsplash.com/photo-1521737711867-e3b97375f902?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1587&q=80'
             alt=''
@@ -174,8 +174,7 @@ export default function Hero () {
 
       <div className='max-w-8xl px-6 lg:px-8 mt-28 mb-20'>
         <h2 className='text-4xl font-extrabold text-center text-black mb-20 flex items-center justify-center'>
-          Adieu <HandRaisedIcon className='h-8 w-8 text-yellow-500 mx-1' /> aux
-          soucis Web . Dites bonjour à votre équipe de rêve.
+          Adieu aux soucis Web . Dites bonjour à votre équipe de rêve.
         </h2>
         <div className='mx-auto grid max-w-full grid-cols-1 lg:mx-0 lg:max-w-none'>
           <dl className='mx-auto grid grid-cols-1 gap-8 sm:gap-12 lg:gap-16 lg:grid-cols-3'>
@@ -196,21 +195,21 @@ export default function Hero () {
         </div>
       </div>
 
-      <div className='relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32'>
+      <div className='relative isolate overflow-hidden bg-blue-700 py-24 sm:py-32'>
         <Image
-         height='2000'
-         width='2000'
-          src='https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&crop=focalpoint&fp-y=.8&w=2830&h=1500&q=80&blend=111827&sat=-100&exp=15&blend-mode=multiply'
+          height='2000'
+          width='2000'
+          src='https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
           alt=''
           className='absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center'
         />
 
         <div className='mx-auto max-w-8xl px-6 lg:px-8'>
           <div className='mx-auto max-w-2xl lg:mx-0'>
-            <h2 className='text-4xl font-bold tracking-tight text-white sm:text-6xl'>
+            <h2 className='text-4xl font-bold tracking-tight text-Black sm:text-6xl'>
               Camel Studio
             </h2>
-            <p className='mt-6 text-lg leading-8 text-gray-300'>
+            <p className='mt-6 text-lg leading-8 text-black'>
               Nous transformons les idées en réalité car chaque projet mérite
               une touche de magie! 🚀🐪
             </p>
@@ -219,13 +218,13 @@ export default function Hero () {
             {cards.map(card => (
               <div key={card.name} className='flex gap-x-4  bg-white/5 p-6 '>
                 <card.icon
-                  className='h-7 w-5 flex-none text-indigo-400'
+                  className='h-7 w-5 flex-none text-blue-700'
                   aria-hidden='true'
                 />
                 <div className='text-base leading-7'>
-                  <h3 className='font-semibold text-white'>{card.name}</h3>
+                  <h3 className='font-semibold text-Black'>{card.name}</h3>
                   <p
-                    className='mt-2 text-gray-300 '
+                    className='mt-2 text-Black '
                     dangerouslySetInnerHTML={{ __html: card.description }}
                   ></p>
                 </div>
@@ -257,11 +256,11 @@ export default function Hero () {
                 <div key={experience.name} className='flex flex-col mx-4'>
                   <dt className='text-base font-semibold leading-7 text-black flex items-center mb-6'>
                     <Image
-                     height='2000'
-                     width='2000'
+                      height='2000'
+                      width='2000'
                       src={experience.imageUrl}
                       alt={experience.name}
-                      className='h-12 w-12 mr-8'
+                      className='h-16 w-16 mr-8'
                     />
                     {experience.name}
                   </dt>
@@ -270,7 +269,7 @@ export default function Hero () {
                     <p className='mt-auto'>
                       <a
                         href={experience.href}
-                        className='text-sm leading-6 text-indigo-600 inline-block'
+                        className='text-sm leading-6 text-blue-700 inline-block'
                       >
                         En savoir plus <span aria-hidden='true'>→</span>
                       </a>
@@ -285,8 +284,8 @@ export default function Hero () {
 
       <div className='relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32'>
         <Image
-         height='2000'
-         width='2000'
+          height='2000'
+          width='2000'
           src='https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&crop=focalpoint&fp-y=.8&w=2830&h=1500&q=80&blend=111827&sat=-100&exp=15&blend-mode=multiply'
           alt=''
           className='absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center'
@@ -295,18 +294,18 @@ export default function Hero () {
         <div className='mx-auto max-w-8xl px-6 lg:px-8'>
           <div className='mx-auto max-w-2xl lg:mx-0'>
             <h2 className='text-4xl font-bold tracking-tight text-white sm:text-6xl'>
-              Développer votre projet avec le Camel Studio 🐪
+              Développer votre projet avec le Camel Studio
             </h2>
             <p className='mt-6 text-lg leading-8 text-gray-300'>
-              Chez Camel Studio, on croit fermement que la force d&rsquo;une équipe
-              réside dans sa cohésion. Notre équipe ne se contente pas d&rsquo;être
-              une bande de collègues, mais une véritable famille de devs. Avec
-              nous, vous faites le choix d’avoir toute une équipe soudée prête à
-              faire briller votre vision. Même si chaque membre de notre équipe
-              bosse sur des projets différents, l&rsquo;esprit d&rsquo;équipe reste intact.
-              On comprend que chaque projet ait des besoins spécifiques, c&rsquo;est
-              pourquoi on offre deux options flexibles pour répondre à vos
-              attentes.
+              Chez Camel Studio, on croit fermement que la force d&rsquo;une
+              équipe réside dans sa cohésion. Notre équipe ne se contente pas
+              d&rsquo;être une bande de collègues, mais une véritable famille de
+              devs. Avec nous, vous faites le choix d’avoir toute une équipe
+              soudée prête à faire briller votre vision. Même si chaque membre
+              de notre équipe bosse sur des projets différents, l&rsquo;esprit
+              d&rsquo;équipe reste intact. On comprend que chaque projet ait des
+              besoins spécifiques, c&rsquo;est pourquoi on offre deux options
+              flexibles pour répondre à vos attentes.
             </p>
           </div>
           <div className='mx-auto mt-12 grid max-w-2xl grid-cols-1 gap-6 sm:mt-20 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:gap-8'>
@@ -345,10 +344,10 @@ export default function Hero () {
           <div className='lg:col-end-1 lg:w-full lg:max-w-lg lg:pb-8'>
             <p className='mt-6 text-lg leading-8 text-Black lg:ml-12'>
               Chez <strong className='font-blod'>Camel Studio</strong> , on est
-              fiers de notre esprit d&rsquo;équipe et on est prêts à vous accompagner,
-              que vous ayez besoin d&rsquo;un renfort ponctuel ou d’une conception
-              complète. Faites équipe avec nous, et ensemble, on fera de votre
-              vision une réalité. 🚀🐪
+              fiers de notre esprit d&rsquo;équipe et on est prêts à vous
+              accompagner, que vous ayez besoin d&rsquo;un renfort ponctuel ou
+              d’une conception complète. Faites équipe avec nous, et ensemble,
+              on fera de votre vision une réalité. 🚀🐪
             </p>
 
             <div className='mt-10 text-blue-700 flex flex-col items-start ml-2'>
@@ -366,6 +365,7 @@ export default function Hero () {
                 <UserIcon className='h-6 w-6 mx-1 text-white bg-blue-500 rounded-full p-1' />
                 <a
                   href='https://www.linkedin.com/company/camelstudio/'
+                  target='_blank'
                   className='text-blue-700'
                 >
                   CamelStudio
@@ -381,8 +381,8 @@ export default function Hero () {
           <div className='flex flex-wrap items-start justify-end gap-6 sm:gap-6 lg:contents'>
             <div className='w-full lg:w-auto lg:flex-none lg:self-end lg:ml-44'>
               <Image
-               height='2000'
-               width='2000'
+                height='2000'
+                width='2000'
                 src='/equipe.png'
                 alt=''
                 className='w-full h-auto max-w-none rounded-2xl lg:w-[42rem] lg:h-[27rem] bg-gray-50 object-cover'
@@ -391,8 +391,8 @@ export default function Hero () {
             <div className='contents lg:col-span-2 lg:col-end-2 lg:ml-auto lg:flex lg:w-full lg:items-start lg:justify-end lg:gap-x-8'>
               <div className='order-first flex w-full justify-end self-end lg:w-auto'>
                 <Image
-                 height='2000'
-                 width='2000'
+                  height='2000'
+                  width='2000'
                   src='/equipe eljam.jpg'
                   alt=''
                   className='w-full h-auto max-w-none flex-none rounded-2xl lg:w-[32rem] lg:h-[24rem] bg-gray-50 object-cover'
@@ -400,8 +400,8 @@ export default function Hero () {
               </div>
               <div className='flex w-full flex-auto justify-end lg:w-auto lg:flex-none'>
                 <Image
-                 height='2000'
-                 width='2000'
+                  height='2000'
+                  width='2000'
                   src='/equipe desert.jpg'
                   alt=''
                   className='w-full h-auto max-w-none max-h-full flex-none rounded-2xl lg:w-[38rem] lg:h-[28rem] bg-gray-50 object-cover'
@@ -409,8 +409,8 @@ export default function Hero () {
               </div>
               <div className='sm:block sm:w-full sm:flex-auto lg:w-auto lg:flex-none'>
                 <Image
-                 height='2000'
-                 width='2000'
+                  height='2000'
+                  width='2000'
                   src='/desert.png'
                   alt=''
                   className='w-full h-auto max-w-none flex-none rounded-xl lg:w-[28rem] lg:h-[21rem] bg-gray-50 object-cover'
